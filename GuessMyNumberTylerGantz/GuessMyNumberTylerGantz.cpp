@@ -28,8 +28,15 @@ int main()
 			{
 				cout << "Too high!\n\n";
 			}
+			else if (guess < secretNumber)
+			{
+				cout << "Too Low!\n\n";
+			}
 			else
-	}
+			{
+				cout << "\nThat's it! You got it in " << tries << "Guesses!\n";
+			}
+		} while (guess != secretNumber);
     return 0;
 }
 
